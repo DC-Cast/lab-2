@@ -14,10 +14,21 @@ int main() {
     cin >> choice;
     switch (choice) {
         case 1:
-            cout << "I am thinking of a number between 1 and 10\n Enter your guess:";
+            cout << "I am thinking of a number between 1 and 10\nEnter your guess:";
             break;
         case 2:
             cout << "Enter a number\n";
     }
+
+    int randNumber;
+    int userGuessNumber;
+
+    if (randNumber > userGuessNumber)
+        cout << "Guess too low";
+    else if (randNumber < userGuessNumber)
+        cout << "Guess too high";
+    else (randNumber == userGuessNumber)
+        
+
     return 0;
 }
